@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="774.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projeto.GuiNetwork">
+  <tabs>
+    <Tab text="Control">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab fx:id="tabPSU" text="Fontes de Enegia">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="labelPotProd" layoutX="28.0" layoutY="64.0" promptText="&quot;200 000&quot;" />
+                  <Label layoutX="185.0" layoutY="38.0" text="Tipo de energia" />
+                  <Label layoutX="28.0" layoutY="38.0" text="Potencia Produzida" />
+                  <Button fx:id="buttonPSU" layoutX="505.0" layoutY="64.0" mnemonicParsing="false" text="Adicionar" />
+                  <TextArea fx:id="textAreaPSU" editable="false" layoutX="260.0" layoutY="151.0" prefHeight="271.0" prefWidth="489.0" />
+                  <Label layoutX="342.0" layoutY="38.0" text="Posto de distribuição" />
+                  <ComboBox fx:id="comboBox" layoutX="28.0" layoutY="242.0" prefWidth="150.0" promptText="Escolha uma opção" visibleRowCount="3" />
+                  <Button fx:id="loadPSUButton" layoutX="260.0" layoutY="119.0" mnemonicParsing="false" onAction="#pressedLoadPSUButton" text="Atualizar" />
+                  <ComboBox fx:id="comboBoxTipoEnergia" layoutX="185.0" layoutY="64.0" onAction="#pressedComboBoxTipoEnergia" prefWidth="150.0" promptText="Escolha uma opção" visibleRowCount="3" />
+                  <ComboBox fx:id="comboBox11" layoutX="342.0" layoutY="64.0" prefWidth="150.0" promptText="Escolha uma opção" visibleRowCount="3" />
+                  <ChoiceBox layoutX="28.0" layoutY="213.0" onDragDetected="#pressedComboBoxTipoEnergia" prefWidth="150.0" />
+               </children></AnchorPane>
+        </content>
+      </Tab>
+      <Tab text="Postos de Distribuição">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="28.0" layoutY="64.0" />
+                  <Label layoutX="28.0" layoutY="38.0" text="Potencia Distribuida" />
+                  <Button layoutX="193.0" layoutY="64.0" mnemonicParsing="false" text="Adicionar" />
+                  <TextArea editable="false" layoutX="260.0" layoutY="151.0" prefHeight="271.0" prefWidth="489.0" />
+                  <ChoiceBox layoutX="28.0" layoutY="247.0" prefWidth="150.0" />
+                  <Label layoutX="28.0" layoutY="217.0" prefHeight="17.0" prefWidth="150.0" text="Escolher:" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Zonas">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="28.0" layoutY="64.0" />
+                  <Label layoutX="28.0" layoutY="38.0" text="Nome da Localidade" />
+                  <TextArea fx:id="textAreaZone" editable="false" layoutX="260.0" layoutY="151.0" prefHeight="271.0" prefWidth="489.0" />
+                  <ChoiceBox layoutX="28.0" layoutY="247.0" prefWidth="150.0" />
+                  <Label layoutX="28.0" layoutY="217.0" prefHeight="17.0" prefWidth="150.0" text="Escolher:" />
+                  <Button layoutX="366.0" layoutY="64.0" mnemonicParsing="false" text="Adicionar" />
+                  <TextField layoutX="193.0" layoutY="64.0" />
+                  <Label layoutX="193.0" layoutY="38.0" text="Codigo Postal" />
+                  <Button fx:id="loadZoneButton" layoutX="28.0" layoutY="287.0" mnemonicParsing="false" onAction="#pressedLoadZoneButton" text="Carregar" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Habitações">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField layoutX="28.0" layoutY="64.0" />
+                  <Label layoutX="185.0" layoutY="38.0" text="Zona" />
+                  <Label layoutX="28.0" layoutY="38.0" text="Potencia Contratada" />
+                  <ChoiceBox layoutX="185.0" layoutY="64.0" prefWidth="150.0" />
+                  <Button layoutX="354.0" layoutY="64.0" mnemonicParsing="false" text="Adicionar" />
+                  <TextArea editable="false" layoutX="260.0" layoutY="151.0" prefHeight="271.0" prefWidth="489.0" />
+                  <ChoiceBox layoutX="28.0" layoutY="247.0" prefWidth="150.0" />
+                  <Label layoutX="28.0" layoutY="217.0" prefHeight="17.0" prefWidth="150.0" text="Escolher:" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Equipamentos">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+    <Tab text="Graph">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextArea fx:id="textAreaGraph" layoutX="159.0" layoutY="9.0" prefHeight="428.0" prefWidth="599.0" />
+                  <Button fx:id="loadGraphButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressedLoadGraphButton" prefHeight="25.0" prefWidth="103.0" text="Carregar" />
+                  <Button layoutX="122.0" layoutY="14.0" mnemonicParsing="false" onAction="#pressedClearButton" prefHeight="25.0" prefWidth="31.0" text="X" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

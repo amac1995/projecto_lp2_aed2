@@ -1,0 +1,4 @@
+
+------não acho que faça sentido ter as classes EquipamentoProd e EquipamentoGer, acho que bastava ter a Equipamento como tinhamos antes, é mais simples mas temos de perguntar ao moreira ou ao Christophe
+------fazer a diferença entre datas(minuto, hora, dia, mes, ano) em dias;
+

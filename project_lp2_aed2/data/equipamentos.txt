@@ -1,0 +1,5 @@
+1;"Maquina de café"; true; 150; true;
+2;"Arca congeladora"; true; 360; true;
+3;"Painel solar"; falso; 1500; true;
+4;"Maquina de lavar loiça"; true; 900; true;
+5;"Maquina de lavar roupa"; true; 1200; true;

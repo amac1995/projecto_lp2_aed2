@@ -1,0 +1,3 @@
+ID Fonte: FE100	|	Tipo de Energia: 'Solar'		|	Energia produzida: 125000w
+ID Fonte: FE101	|	Tipo de Energia: 'Nuclear'		|	Energia produzida: 200000w
+ID Fonte: FE102	|	Tipo de Energia: 'Eolica'		|	Energia produzida: 225000w

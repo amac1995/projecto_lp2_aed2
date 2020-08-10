@@ -1,0 +1,2 @@
+Zona: 380	|	 nome='Ovar'	|	 zip=3880
+Zona: 381	|	 nome='Cucujães'	|	 zip=3980

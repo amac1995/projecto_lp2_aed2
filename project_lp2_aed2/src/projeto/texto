@@ -1,0 +1,26 @@
+hashmaps'-linhas de tensao
+
+postodedistribuiçao - linhas - zona - casa - equipamento
+postodedistribuiçao - fontedeenergia
+
+Classes novas -
+    Edges - linhas de tensao
+    Vertices -
+
+Grafos -
+    FlowNetwork
+    FlowEdge - (v,w,peso(capacidadeMaxLinha))
+
+    Nos- criar array node e herdar flownetwork nos postos de distribuiçao
+        Acrecentar o:
+            nome
+            coordenadas
+
+    Edges - lines herdam o flowedges
+    V - vertice inicial
+    w - vertice destino
+        Acrecentar:
+            capacidade
+            flow
+            baixa/Alta tensao
+
